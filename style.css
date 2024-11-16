@@ -1,0 +1,81 @@
+.padding{padding: 1%;}
+.column, .row, h3::after{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.row{
+    flex-direction: row;
+    justify-content: space-around;
+}
+.outlineStyle{
+    outline-width: 5px;
+    outline-style: solid;
+    outline-color: black;
+}
+.frozen{color: cadetblue;}
+.frozen:hover{color: blue;}
+title, script{display: none;}
+body, section{
+    color: aliceblue;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./src/artBySuntun110.png");
+    font-size: large;
+}
+section{
+    background-image: url("./src/iceyBackground.png");
+    background-repeat: repeat;
+    width: 90%;
+    margin: 5%;
+}
+header{
+    width: 70%;
+    margin: 1% 15%;
+    font-size: larger;
+    div{
+        background-color: aliceblue;
+        color: black;
+        img{
+            position: absolute;
+            top: 21%;
+            left: 70%;
+        }
+    }
+}
+ul{list-style: none;}
+a{
+    text-decoration: none;
+    color: orange;
+}
+a:hover{color: orangered;}
+h3::after{
+    content: url("./src/snowyTumbnail.png");
+}
+@media screen and (max-width: 500px) {
+    section{
+        width: 100%;
+        margin: 0;
+    }
+    .row{flex-direction: column;}
+    header div img{display: none;}
+    img{width: 70%;}
+}
+@media screen and (max-width: 850px) {
+    img{width: 70%;}
+    header div img{
+        width: 18%;
+        top: 5%;
+        left: 65%;
+    }
+}
+@media screen and (max-width: 1560px) and (max-height: 1560px) {
+    img{width: 90%;}
+    header div img{
+        width: 18%;
+        top: 7%;
+        left: 60%;
+    }
+}
